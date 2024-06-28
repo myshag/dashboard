@@ -43,6 +43,11 @@
             font-size: 30px;
         }
 
+        .temperature_card .header .temp {
+
+            font-size: 54px;
+        }
+
         .temperature_card .main {
             display: inline;
             justify-content: end;
