@@ -1,0 +1,152 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color:rgb(234, 234, 225);
+            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .dashboard {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin: 10px;
+        }
+
+        .temperature_card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: auto;
+            background: lightblue;
+        }
+
+        .temperature_card .header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 30px;
+        }
+
+        .temperature_card .main {
+            display: inline;
+            justify-content: end;
+            width: 25%;
+            align-items: end;
+            font-size: 16px;
+        }
+
+        .temperature_card .main .temp {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .temperature_card .main .condition {
+            text-align: right;
+        }
+
+        .temperature_card .footer {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .forecast_box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+
+        .forecast_item {
+            background:linear-gradient(lightblue,rgb(150, 150, 238));
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80px;
+            text-align: center;
+            margin: 5px;
+            flex: 1 0 10%; /* Позволяет элементам занимать больше места */
+        }
+
+        .forecast_item .day {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .forecast_item .temp {
+            font-size: 20px;
+        }
+
+        .forecast_item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .high_low p {
+            margin: 0;
+        }
+
+        .feels_like p {
+            margin: 0;
+        }
+
+        .weather_details {
+            display: grid;
+            grid-template-columns: auto auto 10px;
+            gap: 1px;
+            align-items: center;
+            background: rgba(141, 242, 102, 0.1);
+        }
+
+        .weather_details p {
+            margin: 5px 0;
+            font-size: 32px;
+        }
+
+        .sunrise_sunset {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: lightgreen;
+        }
+
+        .sunrise_sunset p {
+            margin: 10px 0;
+            font-size: 32px;
+        }
+
+        .weather_details img,
+        .sunrise_sunset img {
+            width:46px;
+            height: 46px;
+        }
+
+        .inline-paragraphs {
+            display: flex;
+            gap: 10px; /* Расстояние между параграфами */
+        }
+
+        .inline-paragraphs p {
+            margin: 0;
+        }

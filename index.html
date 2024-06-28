@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="./wether.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    
+
+                
+</head>
+<body>
+
+    <div class="dashboard">
+        <div class="card temperature_card">
+            <div class="header">
+                <div class="temp">
+                    <div class="inline-paragraphs">
+                        <p>High:</p>
+                        <p id="temperature"> </p>
+                        <p>&degC</p>
+                        </div>
+
+                </div>
+                <div class="high_low">
+                    <div class="inline-paragraphs">
+                    <p>High:</p>
+                    <p id="max_temp"> </p>
+                    <p>&degC</p>
+                    </div>
+                
+                    <div class="inline-paragraphs">
+                    <p>Low:</p>
+                    <p id="min_temp"> </p>
+                    <p>&degC</p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="main">
+                <p class="condition">Overcast:
+                    <img id="icon_0" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+                </p>
+            </div>
+            <div class="footer">
+                <div class="feels_like">
+                    <div class="inline-paragraphs">
+                        <p>Feel like:</p>
+                        <p id="apparent_temperature"> </p>
+                        <p>&degC</p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card weather_details">
+            <p>Visibility</p>
+            <div class="inline-paragraphs">
+    
+                <p id="visibility"> </p>
+                <p>km</p>
+                </div>
+            <img src="./weather-icons-master/svg/wi-dust.svg" alt="Visibility">
+
+            <p>Dew Point</p>
+            <div class="inline-paragraphs">
+    
+                <p id="dew_point"> </p>
+                <p>&deg C</p>
+                </div>
+            <img src="./weather-icons-master/svg/wi-humidity.svg" alt="Dew Point">
+
+            <p>Wind:</p>
+            <div class="inline-paragraphs">
+    
+                <p id="wind_speed"> </p>
+                <p>m/s</p>
+                </div>
+            <img src="./weather-icons-master/svg/wi-wind-deg.svg" alt="Wind">
+
+
+            <p>Humidity:</p>
+            <div class="inline-paragraphs">
+    
+                <p id="relative_humidity"> </p>
+                <p>%</p>
+                </div>
+            <img src="./weather-icons-master/svg/wi-humidity.svg" alt="Humidity">
+
+            <p>Cloudiness:</p>
+            <div class="inline-paragraphs">
+    
+                <p id="cloud_cover"> </p>
+                <p>%</p>
+                </div>
+            <img src="./weather-icons-master/svg/wi-cloudy.svg" alt="Cloudiness">
+        </div>
+
+        <div class="card">
+            <div class="sunrise_sunset">
+            
+                <div>
+                    <img src="./weather-icons-master/svg/wi-sunrise.svg" alt="Sunrise and Sunset">
+                    <p>Sunrise</p>
+                    <p id="sunrise">07:13 AM</p>
+                </div>
+
+                
+                <img src="./weather-icons-master/svg/wi-sunset.svg" alt="Sunrise and Sunset">
+                <p>Sunset</p>
+                <p id="sunset">07:13 AM</p>
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="forecast_box">
+        <div class="forecast_item">
+            <div class="day" id="day_1"></div>
+            <img id="icon_1" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_1"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_1"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+        <div class="forecast_item">
+            <div class="day" id="day_2"></div>
+            <img id="icon_2" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_2"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_2"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+        <div class="forecast_item">
+            <div class="day" id="day_3"></div>
+            <img id="icon_3" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_3"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_3"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+        <div class="forecast_item">
+            <div class="day" id="day_4"></div>
+            <img id="icon_4" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_4"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_4"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+        <div class="forecast_item">
+            <div class="day" id="day_5"></div>
+            <img id="icon_5" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_5"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_5"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+        <div class="forecast_item">
+            <div class="day" id="day_6"></div>
+            <img id="icon_6" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_6"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_6"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+        <div class="forecast_item">
+            <div class="day" id="day_7"></div>
+            <img id="icon_7" src="./weather-icons-master/svg/wi-na.svg" alt="Weather Icon">
+            <div class="inline-paragraphs">
+            
+                <p id="max_temp_7"> </p>
+                <p>&degC</p>
+                </div>
+            
+                <div class="inline-paragraphs">
+                
+                <p id="min_temp_7"> </p>
+                <p>&degC</p>
+                </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
