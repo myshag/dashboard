@@ -42,7 +42,7 @@
             fetch(url)
                 .then(response => response.json())
                 .then(data => {
-                    print("data",data)
+                    
                     const currentWeather = data.hourly;
                     const dailyWeather = data.daily;
 
